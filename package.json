@@ -1,0 +1,30 @@
+{
+  "name": "@ch0918/ch-ui",
+  "version": "1.0.0",
+  "description": "构建自己的ui组件库",
+  "main": "lib/ch-ui.common.js",
+  "dependencies": {
+    "webpack": "^5.76.3",
+    "webpack-cli": "^5.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build:commonjs2": "webpack --config webpack.common.js",
+    "build:umd": "webpack --config webpack.umd.js",
+    "build": "npm run build:commonjs2 && npm run build:umd"
+  },
+  "files": [
+    "lib",
+    "package.json"
+  ],
+  "keywords": [
+    "组件库",
+    "练习"
+  ],
+  "author": "ch0918",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liyongning/lyn-comp-lib.git"
+  }
+}
